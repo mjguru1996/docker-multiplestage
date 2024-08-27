@@ -1,6 +1,6 @@
 # Stage1 -Build
 FROM maven as maven
-RUN usr/src/mymaven
+RUN mkdir usr/src/mymaven
 WORKDIR usr/src/mymaven
 COPY . .
 RUN mvn  install -Dskiptests
